@@ -25,16 +25,48 @@ public class Task5 {
             int C = -c*b;
             int D = B*B - 4*A*C;
 
-            if (D > 0) {
+            if(a == 0 && b != 0 && D > 0){
                 double x1 = (-B + Math.sqrt(D)) / (2 * A);
                 double x2 = (-B - Math.sqrt(D)) / (2 * A);
-                if (a != 0 && (x1 == (double) -b /a || x2 == (double) -b /a)){
-                    System.out.println("Розв'язків немає");
-                } else{
-                    System.out.printf("x Є (%.2f ; %.2f)", x2, x1);
+                System.out.printf("x Є (-∞ ; %.2f) and (%.2f ; ∞)", Math.min(x2, x1), Math.max(x2,x1));
+            } else if (a != 0 && b == 0 && D > 0) {
+                double x1 = (-B + Math.sqrt(D)) / (2 * A);
+                double x2 = (-B - Math.sqrt(D)) / (2 * A);
+                if (a > 0){
+                    System.out.printf("x Є (-∞ ; %.2f)", Math.min(x2, x1));
+                } else {
+                    System.out.printf("x Є (%.2f ; ∞)", Math.max(x2, x1));
                 }
-            }
-            else{
+            } else if (a != 0 && b != 0 && D > 0) {
+                double x1 = (-B + Math.sqrt(D)) / (2 * A);
+                double x2 = (-B - Math.sqrt(D)) / (2 * A);
+                double x3 = (double) -b /a;
+                double smallest, middle, largest;
+
+                if (x1 <= x2 && x1 <= x3) {
+                    smallest = x1;
+                } else if (x2 <= x1 && x2 <= x3) {
+                    smallest = x2;
+                } else {
+                    smallest = x3;
+                }
+
+                if (x1 >= x2 && x1 >= x3) {
+                    largest = x1;
+                } else if (x2 >= x1 && x2 >= x3) {
+                    largest = x2;
+                } else {
+                    largest = x3;
+                }
+
+                middle = (x1 + x2 + x3) - smallest - largest;
+
+                if (a > 0){
+                    System.out.printf("x Є (-∞ ; %.2f) and (%.2f ; %.2f)", smallest, middle, largest);
+                } else {
+                    System.out.printf("x Є (%.2f ; %.2f) and (%.2f ; ∞)", smallest, middle, largest);
+                }
+            } else {
                 System.out.println("Розв'язків немає");
             }
         }

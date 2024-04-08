@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756cfc8c-d003-4172-bb1e-fd06d30a204e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FileRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Program.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tour.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab2/lab2_2Java/src/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/lab2_2Java/src/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab2/lab2_2Kotlin/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/lab2_2Kotlin/src/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="756cfc8c-d003-4172-bb1e-fd06d30a204e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
